@@ -16,12 +16,13 @@ export default function Movie(props) {
          <Card.Body>
            <Card.Title>{props.trend.title}</Card.Title>
            <Card.Text>{props.trend.release_date}</Card.Text>
-           <Button variant="primary" onClick={handleShow}> add to favorite list</Button>
+           <Button variant="primary" onClick={handleShow}> show details</Button>
+           
          </Card.Body>
        </Card>
 
-       <ModalMovie show={show}  handleClose={handleClose} trendData = {props.trend} />
-       
+       <ModalMovie show={show}  handleClose={handleClose} trendData = {props.trend}  commentHandler={props.commentHandler}/>
+      
      </>
    );
  }
