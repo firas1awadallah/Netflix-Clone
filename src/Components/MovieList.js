@@ -6,7 +6,7 @@ export default function MovieList(props){
          {
             props.trending.map(trend =>{
                 return(
-                    <Movie trend={trend}/>
+                    <Movie trend={trend} commentHandler={props.commentHandler}/>
                 )
             })
         }
