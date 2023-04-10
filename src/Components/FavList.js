@@ -1,12 +1,11 @@
-import Modal from 'react-bootstrap/Modal';
-import Form from 'react-bootstrap/Form';
+
 
 import {useEffect, useState} from 'react';
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
     
     
-    export default function FavList(props){
+    export default function FavList(){
     
         const [FavList,setFavList ] = useState([]);
     
