@@ -51,7 +51,7 @@
         <Modal.Header closeButton>
           <Modal.Title>{props.trendData.title}</Modal.Title>
         </Modal.Header>
-         <img src={props.trendData.poster_path} alt={props.trendData.title}/>
+         <img src={`https://image.tmdb.org/t/p/w500${props.trendData.poster_path}`} alt={props.trendData.title}/>
          <Modal.Body>
         
         {props.trendData.comments? props.trendData.comments: "No comment Added "}
